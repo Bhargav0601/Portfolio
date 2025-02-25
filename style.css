@@ -881,7 +881,6 @@ textarea {
   }
 }
 
-
 /* Footer */
 footer {
   background: var(--primary);
@@ -911,4 +910,97 @@ footer {
 
 .social-links a:hover {
   color: var(--light);
+}
+
+/* AWS Project Page Specific Styles */
+#aws-project {
+  padding: 4rem 2rem;
+  background-color: var(--white);
+}
+
+.aws-project-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aws-project-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.aws-project-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.aws-project-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.aws-project-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.aws-project-content ul li {
+  background: rgba(112, 119, 161, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--primary);
+}
+
+.aws-project-content img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aws-project-content img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--light);
+  color: var(--primary);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: var(--accent);
+}
+
+/* Responsive AWS Project Page */
+@media (max-width: 768px) {
+  .aws-project-content h1 {
+    font-size: 2rem;
+  }
+
+  .aws-project-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .aws-project-content p {
+    font-size: 1rem;
+  }
+
+  .aws-project-content ul li {
+    font-size: 0.9rem;
+  }
 }
