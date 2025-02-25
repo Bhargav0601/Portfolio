@@ -30,15 +30,6 @@ Check out the live version of my portfolio here:
 - **Form Handling**:
   - [Formspree](https://formspree.io/)
 
-## 📂 Project Structure
-Portfolio/
-├── index.html # Main HTML file
-├── style.css # Styles for the website
-├── script.js # JavaScript for interactivity
-├── Logo/ # Folder for images and logos
-│ └── Bhargav.jpg # Profile picture
-├── particles.json # Configuration for Particles.js
-└── README.md # Project documentation
 
 ## 🎯 Key Sections
 
@@ -77,15 +68,18 @@ Portfolio/
    git clone https://github.com/Bhargav0601/Portfolio.git
 
 2. Navigate to the Project Directory:
+
     cd Portfolio
 
 
 3. Open index.html:
+
 Open the index.html file in your browser to view the website.
 
 
 
-📧 Contact Me
+## 📧 Contact Me
+
 Feel free to reach out to me for collaborations, job opportunities, or just a friendly chat!
 
 Email: Bhargav.ravi.2001@gmail.com
