@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhargav Ravi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-brand">BR</div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content" data-aos="fade-up">
+          <h1 class="greeting">Hi, I'm</h1>
+          <h1 class="name">Bhargav Ravi</h1>
+          <p class="tagline"></p>
+          <!-- Updated button with "Hire Me" text and link to contact section -->
+          <button class="cta-button" onclick="scrollToContact()">Hire Me</button>
+      </div>
+      <div id="particles-js"></div>
+  </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <div class="about-container">
+          <div class="about-image" data-aos="fade-right">
+              <img src="Logo/Bhargav.jpg" alt="Bhargav Ravi">
+          </div>
+          <div class="about-content" data-aos="fade-left">
+              <div class="about-text">
+                  <h3>Who am I?</h3>
+                  <p>A passionate Data Scientist with expertise in AI and Analytics. I’m a global explorer seeking new perspectives and a problem solver driven by curiosity.</p>
+              </div>
+              <div class="personal-details">
+                  <p><strong>Name:</strong> Bhargav Ravi</p>
+                  <p><strong>DOB:</strong> January 06, 2000</p>
+                  <p><strong>Phone:</strong> +33 75 83 86 547</p>
+                  <p><strong>Location:</strong> Paris, France</p>
+                  <p><strong>Email:</strong> Bhargav.ravi.2001@gmail.com</p>
+              </div>
+              <div class="cv-buttons">
+                  <a href="path-to-english-cv.pdf" class="cv-button" download>Download CV (English)</a>
+                  <a href="path-to-french-cv.pdf" class="cv-button" download>Download CV (French)</a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+<!-- Experience Section -->
+<section id="experience">
+  <h2 class="section-title" data-aos="fade-up">Experience</h2>
+  <div class="experience-container">
+      <!-- Experience Card 1 -->
+      <div class="experience-card" data-aos="fade-up">
+          <div class="card-front">
+              <h3>Graduate Researcher</h3>
+              <p class="company">École Pour l'Informatique et les Techniques Avancées (EPITA)</p>
+              <p class="duration">September 2023 - July 2024 | Paris, France</p>
+          </div>
+          <div class="card-back">
+            <h4>What I Did</h4>
+                <li>Designed and maintained dashboards using Power BI to monitor and visualize key metrics supporting cross-functional teams in decision-making processes.</li>
+                <li>Wrote and optimized SQL queries to extract and analyze data for internal control use cases.</li>
+                <li>Built data pipelines to ensure data accuracy and consistency for compliance-related operations.</li>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+  <h2 class="section-title" data-aos="fade-up">Education</h2>
+  <div class="timeline">
+      <!-- Education Item 1 -->
+      <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+              <h3>MSc. Data Science and Analysis</h3>
+              <p class="institution">École Pour l'Informatique et les Techniques Avancées</p>
+              <p class="duration">2023 - 2024 | Paris, France</p>
+          </div>
+      </div>
+      <!-- Education Item 2 -->
+      <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+              <h3>B.E Computer Science</h3>
+              <p class="institution">Cambridge Institution of Technology</p>
+              <p class="duration">2018 - 2022 | Bangalore, Karnataka, India</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2 class="section-title" data-aos="fade-up">Skills</h2>
+  <div class="skills-container">
+      <!-- Programming & Data -->
+      <div class="skill-category" data-aos="fade-up">
+          <h3>Programming & Data</h3>
+          <div class="skills-grid">
+              <div class="skill-item">
+                  <img src="Logo/images.jpeg" alt="Python">
+                  <p>Python</p>
+                  <a href="https://example.com/certificates/python-certificate.pdf" target="_blank" class="certification-badge" data-tooltip="Certified in Python (Issued by XYZ, 2023)">
+                    ✔ Certified
+                </a>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/R.jpeg" alt="R">
+                  <p>R</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/SQL.jpeg" alt="SQL">
+                  <p>SQL </p>
+                  <a href="path-to-sql-certificate.pdf" target="_blank" class="certification-badge" data-tooltip="Certified in SQL (Issued by ABC, 2022)">
+                    ✔ Certified
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Frameworks -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <h3>Frameworks</h3>
+          <div class="skills-grid">
+              <div class="skill-item">
+                  <img src="Logo/Flask.png" alt="Flask">
+                  <p>Flask</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/TensorFlow.png" alt="TensorFlow">
+                  <p>TensorFlow</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/PyTorch.png" alt="PyTorch">
+                  <p>PyTorch</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Streamlit.png" alt="StreamLit">
+                  <p>StreamLit</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/API.png" alt="API">
+                  <p>API</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Libraries -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+          <h3>Libraries</h3>
+          <div class="skills-grid">
+              <div class="skill-item">
+                  <img src="Logo/scikitlearn.png" alt="Scikit-learn">
+                  <p>Scikit-learn</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Keras.png" alt="Keras">
+                  <p>Keras</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Matplotlib.png" alt="Matplotlib">
+                  <p>Matplotlib</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/plotly.png" alt="Plotly">
+                  <p>Plotly</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Seaborn.png" alt="Seaborn">
+                  <p>Seaborn</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Numpy.png" alt="NumPy">
+                  <p>NumPy</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Pandas.png" alt="Pandas">
+                  <p>Pandas</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+          <h3>Tools</h3>
+          <div class="skills-grid">
+              <div class="skill-item">
+                  <img src="Logo/Github.png" alt="Git">
+                  <p>Git</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/MLflow.png" alt="MLflow">
+                  <p>MLflow</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Airflow.png" alt="Airflow">
+                  <p>Airflow</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Docker.png" alt="Docker">
+                  <p>Docker</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/aws.jpeg" alt="AWS">
+                  <p>AWS</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Excel.png" alt="Excel">
+                  <p>Excel</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Power BI.jpeg" alt="Power BI">
+                  <p>Power BI</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Grafana.jpeg" alt="Grafana">
+                  <p>Grafana</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Coursework -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="800">
+          <h3>Coursework</h3>
+          <div class="skills-grid">
+              <div class="skill-item">
+                  <img src="Logo/Data Alytics.jpeg" alt="Data Analytics">
+                  <p>Data Analytics</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Machine Learning.png" alt="Machine Learning">
+                  <p>Machine Learning</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/Deep Learning.png" alt="Deep Learning">
+                  <p>Deep Learning</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/NLP.png" alt="NLP">
+                  <p>NLP</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/MLops.png" alt="MLOps">
+                  <p>MLOps</p>
+              </div>
+              <div class="skill-item">
+                  <img src="Logo/DBM.png" alt="DBM">
+                  <p>DBM</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+    <!-- Projects Section -->
+<section id="projects">
+  <h2 class="section-title" data-aos="fade-up">Projects</h2>
+  <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card" data-aos="fade-up" onclick="window.location.href='path-to-project-1-page.html'">
+          <img src="Logo/Travel Agent Chatbot.png" alt="Travel Agent Chatbot">
+          <div class="project-content">
+              <h3>Travel Agent Chatbot</h3>
+              <p>An AI-powered chatbot for travel recommendations.</p>
+          </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200" onclick="window.location.href='path-to-project-2-page.html'">
+          <img src="Logo/Car Price prediction.png" alt="Car Price Prediction">
+          <div class="project-content">
+              <h3>Car Price Prediction</h3>
+              <p>Analyzing and predicting car prices based on features.</p>
+          </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="400" onclick="window.location.href='path-to-project-3-page.html'">
+          <img src="Logo/Hosue_price_prediciton.jpg" alt="House Price Prediction">
+          <div class="project-content">
+              <h3>House Price Prediction</h3>
+              <p>Predicting house prices using machine learning models.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Languages Section -->
+<section id="languages">
+  <h2 class="section-title" data-aos="fade-up">Languages</h2>
+  <div class="languages-container">
+      <!-- English -->
+      <div class="language-item" data-aos="fade-up">
+          <div class="progress-circle" data-progress="90">
+              <span>90%</span>
+          </div>
+          <p>English</p>
+      </div>
+      <!-- French -->
+      <div class="language-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="progress-circle" data-progress="50">
+              <span>50%</span>
+          </div>
+          <p>French</p>
+      </div>
+      <!-- Kannada -->
+      <div class="language-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="progress-circle" data-progress="95">
+              <span>95%</span>
+          </div>
+          <p>Kannada</p>
+      </div>
+      <!-- Hindi -->
+      <div class="language-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="progress-circle" data-progress="90">
+              <span>90%</span>
+          </div>
+          <p>Hindi</p>
+      </div>
+      <!-- Tamil -->
+      <div class="language-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="progress-circle" data-progress="60">
+              <span>60%</span>
+          </div>
+          <p>Tamil</p>
+      </div>
+      <!-- Telugu -->
+      <div class="language-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="progress-circle" data-progress="60">
+              <span>60%</span>
+          </div>
+          <p>Telugu</p>
+      </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-container">
+          <!-- Left Side: Social Links and Additional Info -->
+          <div class="contact-left">
+              <h3>Let's Connect!</h3>
+              <p>Feel free to reach out to me for collaborations, job opportunities, or just a friendly chat. I'm always open to new ideas and projects!</p>
+  
+              <!-- Social Links -->
+              <div class="social-links">
+                  <a href="https://www.linkedin.com/in/bhargav-r-7561661b1" target="_blank" class="social-link">
+                      <img src="Logo/Linkedin.png" alt="LinkedIn">
+                      <span>LinkedIn</span>
+                  </a>
+                  <a href="https://github.com/Bhargav0601" target="_blank" class="social-link">
+                      <img src="Logo/Github.png" alt="GitHub">
+                      <span>GitHub</span>
+                  </a>
+                  <a href="mailto:bhargav.ravi.2001@gmail.com" class="social-link">
+                      <img src="Logo/Gmail.png" alt="Email">
+                      <span>Email</span>
+                  </a>
+              </div>
+  
+              <!-- Additional Info -->
+              <div class="additional-info">
+                  <h4>Based in:</h4>
+                  <p>Paris, France</p>
+                  <h4>Availability:</h4>
+                  <p>Open to new opportunities</p>
+              </div>
+          </div>
+  
+          <!-- Right Side: Contact Form -->
+          <div class="contact-right">
+              <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="submit-button">Send Message</button>
+              </form>
+              <div id="form-status"></div>
+          </div>
+      </div>
+  </section>
+
+<footer>
+  <div class="footer-content">
+      <p>&copy; 2025 Bhargav Ravi. All rights reserved.</p>
+      <div class="social-links">
+          <a href="https://www.yourwebsite.com" target="_blank">Website</a>
+          <a href="https://github.com/Bhargav0601" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/bhargav-r-7561661b1" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+      </div>
+  </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
