@@ -52,6 +52,26 @@ particlesJS.load('particles-js', 'particles.json', function () {
   console.log('Particles.js loaded!');
 });
 
+// Function to validate email
+function isValidEmail(email) {
+  // Regex to check if the email is valid
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailRegex.test(email);
+}
+
+// Function to display error message
+function showError(inputId, message) {
+  const errorElement = document.getElementById(`${inputId}-error`);
+  errorElement.textContent = message;
+  errorElement.style.display = 'block';
+}
+
+// Function to hide error message
+function hideError(inputId) {
+  const errorElement = document.getElementById(`${inputId}-error`);
+  errorElement.style.display = 'none';
+}
+
 // Form Submission Handling
 const form = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
@@ -61,6 +81,35 @@ form.addEventListener('submit', async (e) => {
 
   // Get form data
   const formData = new FormData(form);
+  const name = formData.get('name');
+  const email = formData.get('email');
+  const message = formData.get('message');
+
+  // Reset error messages
+  hideError('name');
+  hideError('email');
+  hideError('message');
+
+  // Validate name
+  if (!name) {
+    showError('name', 'Name is required.');
+    return;
+  }
+
+  // Validate email
+  if (!email) {
+    showError('email', 'Email is required.');
+    return;
+  } else if (!isValidEmail(email)) {
+    showError('email', 'Please enter a valid email address.');
+    return;
+  }
+
+  // Validate message
+  if (!message) {
+    showError('message', 'Message is required.');
+    return;
+  }
 
   try {
     // Send form data to Formspree using fetch
@@ -97,25 +146,19 @@ function resetForm() {
   form.reset(); // Clear the form fields
   form.style.display = 'block'; // Show the form again
   formStatus.innerHTML = ''; // Clear the status message
+  hideError('name');
+  hideError('email');
+  hideError('message');
 }
 
-// Email Validation for Gmail (Optional)
+// Email Validation for Any Valid Email
 const emailInput = document.getElementById('email');
 
 emailInput.addEventListener('input', () => {
   const email = emailInput.value.trim();
-  if (!isValidGmail(email)) {
-    emailInput.setCustomValidity('Please enter a valid Gmail address.');
-    formStatus.innerHTML = 'Please enter a valid Gmail address.';
-    formStatus.style.color = 'red';
+  if (!isValidEmail(email)) {
+    showError('email', 'Please enter a valid email address.');
   } else {
-    emailInput.setCustomValidity('');
-    formStatus.innerHTML = '';
+    hideError('email');
   }
 });
-
-function isValidGmail(email) {
-  // Regex to check if the email is a valid Gmail address
-  const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-  return gmailRegex.test(email);
-}
